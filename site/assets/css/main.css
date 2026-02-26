@@ -6611,7 +6611,7 @@ html[lang=ar] .blog_con .blog_sidebar {
 
     .blog_card .image {
         width: 100%;
-        height: 240px;
+        height: 320px;
         overflow: hidden;
         border-start-end-radius: 20px;
         border-end-start-radius: 20px;
@@ -6672,7 +6672,7 @@ html[lang=ar] .blog_con .blog_sidebar {
 
 .blog_card:hover .blog-img {
     filter: grayscale(1) !important;
-    transform: scale(1.2) rotate(3deg);
+    transform: scale(1.05) ;
 }
 
 .blog_date {
@@ -7171,3 +7171,4 @@ html[lang=ar] .main-input.search .main-icon {
 
 
 /***************** End  *********************/ /*# sourceMappingURL=main.css.map */
+
