@@ -92,9 +92,9 @@
                 </p>
                 <div class="d-flex align-items-center gap-3 mt-4">
                     <a href="#/products" class="main-btn up wow fadeInUp">Our Products</a>
-                    <a href="./3.pdf" download="3.pdf" target="_blank" class="main-btn white wow fadeInUp">
+                    <!-- <a href="./3.pdf" download="3.pdf" target="_blank" class="main-btn white wow fadeInUp">
                         Download Catalog<i class="fa-solid fa-download"></i>
-                    </a>
+                    </a> -->
                 </div>
             </div>
         </div>
@@ -140,12 +140,12 @@
                          alt="Cultivation and Sourcing" class="service-img">
                 </div>
                 <div class="service-content">
-                    <h5 class="service-name"><a href="#/services">Cultivation and Sourcing</a></h5>
+                    <h5 class="service-name"><a data-ng-click="RouteToPage('1')">Cultivation and Sourcing</a></h5>
                     <p class="desc">At El Nile for Export, quality begins at the root. We cultivate our herbs
                        in carefully selected Egyptian farms located in Fayoum and other fertile agricultural
                        regions, ensuring naturally rich leaves full of aroma and flavor.</p>
                     <div class="buttons_con">
-                        <a class="main-btn up" href="#/services">More <i class="fa-solid fa-add"></i></a>
+                        <a class="main-btn up" data-ng-click="RouteToPage('1')">More <i class="fa-solid fa-add"></i></a>
                     </div>
                 </div>
             </div>
@@ -156,12 +156,12 @@
                          alt="Drying and Processing" class="service-img">
                 </div>
                 <div class="service-content">
-                    <h5 class="service-name"><a href="#/services">Drying and Processing</a></h5>
+                    <h5 class="service-name"><a data-ng-click="RouteToPage('2')">Drying and Processing</a></h5>
                     <p class="desc">Drying is one of the most essential stages in herb production. At El Nile
                        for Export, we rely on a precise combination of natural and controlled industrial drying
                        methods following internationally approved standards.</p>
                     <div class="buttons_con">
-                        <a class="main-btn up" href="#/services">More <i class="fa-solid fa-add"></i></a>
+                        <a class="main-btn up" data-ng-click="RouteToPage('2')">More <i class="fa-solid fa-add"></i></a>
                     </div>
                 </div>
             </div>
@@ -172,12 +172,12 @@
                          alt="Quality Control" class="service-img">
                 </div>
                 <div class="service-content">
-                    <h5 class="service-name"><a href="#/services">Quality Control and Testing</a></h5>
+                    <h5 class="service-name"><a data-ng-click="RouteToPage('3')">Quality Control and Testing</a></h5>
                     <p class="desc">At El Nile for Export, quality is a commitment—not an option. Every
                        production batch undergoes advanced laboratory testing to ensure compliance with
                        European and international standards.</p>
                     <div class="buttons_con">
-                        <a class="main-btn up" href="#/services">More <i class="fa-solid fa-add"></i></a>
+                        <a class="main-btn up" data-ng-click="RouteToPage('3')">More <i class="fa-solid fa-add"></i></a>
                     </div>
                 </div>
             </div>
@@ -188,12 +188,12 @@
                          alt="Packaging and Labeling" class="service-img">
                 </div>
                 <div class="service-content">
-                    <h5 class="service-name"><a href="#/services">Packaging and Labeling</a></h5>
+                    <h5 class="service-name"><a data-ng-click="RouteToPage('4')">Packaging and Labeling</a></h5>
                     <p class="desc">We use advanced packaging technologies designed to protect the product
                        from external factors such as moisture and light, ensuring freshness, aroma, and
                        natural color are maintained.</p>
                     <div class="buttons_con">
-                        <a class="main-btn up" href="#/services">More <i class="fa-solid fa-add"></i></a>
+                        <a class="main-btn up" data-ng-click="RouteToPage('4')">More <i class="fa-solid fa-add"></i></a>
                     </div>
                 </div>
             </div>
@@ -204,12 +204,12 @@
                          alt="Export and Shipping" class="service-img">
                 </div>
                 <div class="service-content">
-                    <h5 class="service-name"><a href="#/services">Export and International Shipping</a></h5>
+                    <h5 class="service-name"><a data-ng-click="RouteToPage('5')">Export and International Shipping</a></h5>
                     <p class="desc">Exporting is one of the strongest pillars of El Nile for Export, supported
                        by extensive logistical expertise that enables us to deliver our products worldwide with
                        efficiency and reliability.</p>
                     <div class="buttons_con">
-                        <a class="main-btn up" href="#/services">More <i class="fa-solid fa-add"></i></a>
+                        <a class="main-btn up" data-ng-click="RouteToPage('5')">More <i class="fa-solid fa-add"></i></a>
                     </div>
                 </div>
             </div>
@@ -220,11 +220,11 @@
                          alt="Wholesale" class="service-img">
                 </div>
                 <div class="service-content">
-                    <h5 class="service-name"><a href="#/services">Wholesale</a></h5>
+                    <h5 class="service-name"><a data-ng-click="RouteToPage('6')">Wholesale</a></h5>
                     <p class="desc">At El Nile for Export, we offer flexible wholesale supply solutions
                        tailored for factories, retailers, and international brands around the world.</p>
                     <div class="buttons_con">
-                        <a class="main-btn up" href="#/services">More <i class="fa-solid fa-add"></i></a>
+                        <a class="main-btn up" data-ng-click="RouteToPage('6')">More <i class="fa-solid fa-add"></i></a>
                     </div>
                 </div>
             </div>
@@ -283,7 +283,7 @@
     <div class="container">
         <div class="content_title">
             <h4 class="main-title wow fadeInDown">
-                <a href="#/blog" class="link">Our Articles</a>
+                <a href="" class="link">Our Articles</a>
                 <span class="line"></span>
             </h4>
         </div>
@@ -309,7 +309,7 @@
                     <h3 class="blog-name" style="font-size:10px;">Why El Nile?</h3>
                     <p class="desc">In a fast-growing global demand for pure, natural products, El Nile for
                        Export stands out as a ...</p>
-                    <a class="main-btn w-100" href="#/blog">
+                    <a class="main-btn w-100" data-ng-click="RouteToPage('7')">
                         Article Details <i class="fa-solid fa-angles-left" aria-hidden="true"></i>
                     </a>
                 </div>

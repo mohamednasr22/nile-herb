@@ -23,6 +23,10 @@
         .footer-title p {
             color: white;
         }
+
+        .links-nav a {
+            color: #872828;
+        }
     </style>
 </head>
 
@@ -43,20 +47,21 @@
                 <a href="#/" class="logo">
                     <img loading="lazy" src="./Images/nile_logo.jpeg" alt="El Nile For Export" class="logo-img">
                 </a>
-                <div class="links">
+                <div class="links links-nav">
                     <a href="#/" class="logo">
                         <img loading="lazy" src="./Images/nilelogo.jpeg" alt="El Nile For Export">
                     </a>
                     <a href="#/" class="link" ng-class="{active: isActive('/')}">Home</a>
-                    <label data-ng-click="RouteToPage('about')" class="link"
-                        ng-class="{active: isActive('/about')}"
-                        >About Us</label>
-                    <a href="#/services" class="link" ng-class="{active: isActive('/services')}">Services</a>
-                    <a href="#/products" class="link" ng-class="{active: isActive('/products')}">Products</a>
-                    <a href="#/contact" class="link" ng-class="{active: isActive('/contact')}">Contact Us</a>
-                <label data-ng-click="RouteToPage('Certificates')" class="link"
-                        ng-class="{active: isActive('/certificates')}"
-                        >Certificates</label>
+                    <a data-ng-click="RouteToPage('about')" class="link" ng-class="{active: isActive('/about')}">About
+                        Us</a>
+                    <a data-ng-click="RouteToPage('services')" class="link"
+                        ng-class="{active: isActive('/services')}">Services</a>
+                    <a data-ng-click="RouteToPage('products')" class="link"
+                        ng-class="{active: isActive('/products')}">Products</a>
+                    <a data-ng-click="RouteToPage('contact')" class="link"
+                        ng-class="{active: isActive('/contact')}">Contact Us</a>
+                    <a data-ng-click="RouteToPage('Certificates')" class="link"
+                        ng-class="{active: isActive('/certificates')}">Certificates</a>
                 </div>
                 <div class="nav-icons">
                     <div class="dropdown">
@@ -93,8 +98,9 @@
                     <div class="d-flex flex-column">
                         <img loading="lazy" src="./Images/nile_logo.jpeg" alt="El Nile For Export" class="footer-logo">
                         <div class="footer-title">
-                            <p>From the heart of Fayoum we create a premium selection of herbs, spices, and seeds
-                                crafted to the highest standards.</p>
+                            <p>We redefine the meaning of purity and quality. From the heart of Fayoum—where fertile
+                                land meets expert craftsmanship—we create a premium selection of herbs, spices, and
+                                seeds crafted to the highest standards.</p>
                         </div>
                     </div>
                 </div>
@@ -105,11 +111,11 @@
                             <a href="#/" class="act-befor"><i class="fas fa-angle-double-left"></i><span>Home</span></a>
                             <a data-ng-click="RouteToPage('about')" class="act-befor"><i
                                     class="fas fa-angle-double-left"></i><span>About Us</span></a>
-                            <a href="#/services" class="act-befor"><i
+                            <a data-ng-click="RouteToPage('services')" class="act-befor"><i
                                     class="fas fa-angle-double-left"></i><span>Services</span></a>
-                            <a href="#/blog" class="act-befor"><i
+                            <a data-ng-click="RouteToPage('blog')" class="act-befor"><i
                                     class="fas fa-angle-double-left"></i><span>Blog</span></a>
-                            <a href="#/faq" class="act-befor"><i
+                            <a data-ng-click="RouteToPage('faq')" class="act-befor"><i
                                     class="fas fa-angle-double-left"></i><span>FAQ</span></a>
                         </div>
                     </div>
@@ -118,15 +124,15 @@
                     <div class="footer-links">
                         <p class="foot-title">Quick Links</p>
                         <div class="links">
-                            <a href="#/team" class="act-befor"><i
+                            <a data-ng-click="RouteToPage('team')" class="act-befor"><i
                                     class="fas fa-angle-double-left"></i><span>Team</span></a>
-                            <a href="#/contact" class="act-befor"><i class="fas fa-angle-double-left"></i><span>Contact
+                            <a data-ng-click="RouteToPage('contact')" class="act-befor"><i class="fas fa-angle-double-left"></i><span>Contact
                                     Us</span></a>
-                            <a href="#/jobs" class="act-befor"><i
+                            <a data-ng-click="RouteToPage('jobs')" class="act-befor"><i
                                     class="fas fa-angle-double-left"></i><span>Jobs</span></a>
-                            <a href="#/training" class="act-befor"><i
+                            <a data-ng-click="RouteToPage('training')" class="act-befor"><i
                                     class="fas fa-angle-double-left"></i><span>Training</span></a>
-                            <a href="#/certificates" class="act-befor"><i
+                            <a data-ng-click="RouteToPage('Certificates')" class="act-befor"><i
                                     class="fas fa-angle-double-left"></i><span>Certificates</span></a>
                         </div>
                     </div>
@@ -151,6 +157,12 @@
                                     <img loading="lazy" src="./site/assets/imgs/icons/icons8-facebook-96.png"
                                         alt="Facebook">
                                 </a>
+                                <a href="https://www.facebook.com/share/18WdpwvrA1/" target="_blank" rel="noopener"
+                                    class="icon">
+                                    <img loading="lazy" src="./site/assets/imgs/icons/linkedin-circled.png"
+                                        alt="LinkedIn">
+                                </a>
+                                
                             </div>
                         </div>
                     </div>
@@ -162,8 +174,9 @@
     <div class="overlay-m"></div>
 
     <!-- SCRIPTS (load before AngularJS) -->
-    <script src="./site/assets/plugins/jquery/jquery-3.5.1.min.js"></script>
     <script src="./site/assets/plugins/bootstrap/bootstrap.bundle.min.js"></script>
+
+    <script src="./site/assets/plugins/jquery/jquery-3.5.1.min.js"></script>
     <script src="./site/assets/plugins/OwlCarousel2-2.3.4/dist_2/owl.carousel.min.js"></script>
     <script src="./site/assets/plugins/FancyBox/jquery.fancybox.min.js"></script>
     <script src="./site/assets/plugins/select2/select2.js"></script>
@@ -175,6 +188,7 @@
     <script src="./site/assets/js/main.js"></script>
     <script src="./site/assets/js/angular.min.js"></script>
     <script src="./site/assets/js/angular-route.min.js"></script>
+
 
     <!--
     ================================================================
@@ -210,30 +224,37 @@
         var app = angular.module('NileApp', ['ngRoute']);
 
         app.config(function ($routeProvider) {
-            console.log(appnme);
-            console.log(appnme);
-//templateUrl: 'AboutUs.html'
+            
+            //templateUrl: 'AboutUs.html'
 
             $routeProvider
-                .when('/', { templateUrl: '/Home.html', controller: 'HomeController' })
+                .when('/', { templateUrl: 'Home.html', controller: 'HomeController' })
                 .when('/about', { templateUrl: 'AboutUs.html', controller: 'AboutController' })
-                .when('/services', { templateUrl: './services.html', controller: 'ServicesController' })
-                .when('/products', { templateUrl: 'tpl/products.html', controller: 'ProductsController' })
-                .when('/contact', { templateUrl: 'tpl/contact.html', controller: 'ContactController' })
-                .when('/blog', { templateUrl: 'tpl/blog.html', controller: 'BlogController' })
-                .when('/faq', { templateUrl: 'tpl/faq.html', controller: 'FaqController' })
-                .when('/team', { templateUrl: 'tpl/team.html', controller: 'TeamController' })
-                .when('/jobs', { templateUrl: 'tpl/jobs.html', controller: 'JobController' })
-                .when('/training', { templateUrl: 'tpl/training.html', controller: 'TrainingController' })
+                .when('/services', { templateUrl: 'services.html', controller: 'ServicesController' })
+                .when('/products', { templateUrl: 'Home/products.html', controller: 'ProductsController' })
+                .when('/contact', { templateUrl: 'ContactUs.html', controller: 'ContactController' })
+                .when('/blog', { templateUrl: 'OurBlog.html', controller: 'BlogController' })
+                .when('/faq', { templateUrl: 'Home/Questions.html', controller: 'FaqController' })
+                .when('/team', { templateUrl: 'Home/Ourteam.html', controller: 'TeamController' })
+                .when('/jobs', { templateUrl: 'Home/JobApplication.html', controller: 'JobController' })
+                .when('/training', { templateUrl: 'Home/Training.html', controller: 'TrainingController' })
                 .when('/Certificates', { templateUrl: 'Home/certificates.html', controller: 'CertificatesController' })
+                .when('/1', { templateUrl: 'Services/Details/1.html', controller: 'CertificatesController' })
+                .when('/2', { templateUrl: 'Services/Details/2.html', controller: 'CertificatesController' })
+                .when('/3', { templateUrl: 'Services/Details/3.html', controller: 'CertificatesController' })
+                .when('/4', { templateUrl: 'Services/Details/4.html', controller: 'CertificatesController' })
+                .when('/5', { templateUrl: 'Services/Details/5.html', controller: 'CertificatesController' })
+                .when('/6', { templateUrl: 'Services/Details/6.html', controller: 'CertificatesController' })
+                .when('/7', { templateUrl: 'Articles/7.html', controller: 'BlogController' })
                 .otherwise({ redirectTo: '/' });
         });
 
         /* Navbar active-link helper */
         app.controller('AppController', function ($scope, $location) {
             $scope.RouteToPage = function (page) {
-    $location.path('/' + page);
-};
+                $location.path('/' + page);
+            };
+
         });
 
         /* Re-initialise jQuery plugins every time a partial is swapped in */
@@ -271,6 +292,9 @@
                 $scope.$on('$viewContentLoaded', function () { initPlugins(); });
                 if (extra) extra($scope);
             }];
+            $scope.sendMessage = function () {
+                sendMessageFunction();
+            };
         }
 
         // app.controller('HomeController',         pageCtrl());
@@ -289,27 +313,75 @@
 
         app.controller('ContactController', pageCtrl(function ($scope) {
             $scope.sendMessage = function () {
-                var u = $.trim($('#userName').val()),
-                    e = $.trim($('#email').val()),
-                    p = $.trim($('#phone').val()),
-                    m = $.trim($('#message').val());
-                if (!u) { errorMsg('Please enter your name'); return; }
-                if (!e) { errorMsg('Please enter your email'); return; }
-                if (!p) { errorMsg('Please enter your phone'); return; }
-                if (!m) { errorMsg('Please enter your message'); return; }
-                $.ajax({
-                    url: '/Home/SendContactUs', type: 'POST',
-                    data: { userName: u, email: e, phone: p, message: m, contactType: 1 },
-                    success: function (res) {
-                        if (res === true) { successMsg('Sent successfully!'); $('#userName,#email,#phone,#message').val(''); }
-                        else { errorMsg('Something went wrong, please try again.'); }
-                    },
-                    error: function () { errorMsg('Something went wrong, please try again.'); }
-                });
+                sendMessageFunction();
             };
         }));
     </script>
 
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            // اختيار جميع العناصر التي تحتوي على النصوص
+            const allDescriptions = document.querySelectorAll(".description-item");
+
+            allDescriptions.forEach(item => {
+                // الحصول على الفهرس من الخاصية "data-index"
+                const index = parseInt(item.getAttribute("data-index"), 10);
+
+                // إخفاء العناصر التي يكون فهرسها أكبر من 5
+                if (index > 5) {
+                    item.style.display = "none";
+                }
+            });
+        });
+    </script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            // اختيار جميع بطاقات الباقات
+            const packages = document.querySelectorAll(".package_card");
+
+            packages.forEach(package => {
+                const descriptions = package.querySelectorAll(".description-item");
+                const showMoreBtn = package.querySelector(".btn-show-more");
+
+                // إخفاء العناصر التي يزيد فهرسها عن 5
+                descriptions.forEach((item, index) => {
+                    if (index > 4) {
+                        item.style.display = "none";
+                    }
+                });
+
+                // زر عرض المزيد
+                showMoreBtn.addEventListener("click", () => {
+                    descriptions.forEach((item, index) => {
+                        if (index > 4) {
+                            item.style.display = "flex";
+                        }
+                    });
+                    showMoreBtn.style.display = "none"; // إخفاء الزر بعد الضغط
+                });
+            });
+        });
+        function sendMessageFunction() {
+            var u = $.trim($('#userName').val()),
+                e = $.trim($('#email').val()),
+                p = $.trim($('#phone').val()),
+                m = $.trim($('#message').val());
+            if (!u) { errorMsg('Please enter your name'); return; }
+            if (!e) { errorMsg('Please enter your email'); return; }
+            if (!p) { errorMsg('Please enter your phone'); return; }
+            if (!m) { errorMsg('Please enter your message'); return; }
+            $.ajax({
+                url: '/Home/SendContactUs', type: 'POST',
+                data: { userName: u, email: e, phone: p, message: m, contactType: 1 },
+                success: function (res) {
+                    if (res === true) { successMsg('Sent successfully!'); $('#userName,#email,#phone,#message').val(''); }
+                    else { errorMsg('Something went wrong, please try again.'); }
+                },
+                error: function () { errorMsg('Something went wrong, please try again.'); }
+            });
+        }
+    </script>
 </body>
 
 </html>

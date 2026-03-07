@@ -256,9 +256,13 @@ a {
 
 .blog_sec .row img, .blog_sec .row p img, .blog_sec .row video {
     width: 100%;
-    height: 430px;
+    /* height: 430px; */
+      height: auto;
     -o-object-fit: cover;
     object-fit: cover;
+}
+.blog_sec a{
+    cursor: pointer;
 }
 
 .h1,
@@ -4085,6 +4089,7 @@ html[lang=ar] .remove-img-2 {
     color: #000000;
     transition: all 0.3s ease;
     position: relative;
+    cursor: pointer;
 }
 
     .page-navbar .navbar-content .links .link::after {
@@ -4435,6 +4440,7 @@ html[lang=ar] .more_nav .more_dropdown {
     content: " ";
     position: absolute;
     border-radius: 16px;
+    cursor: pointer;
 }
 
 html[lang=en] .footer .footer-links .foot-title::before {
@@ -4827,7 +4833,9 @@ html[lang=ar] .footer-left-img {
     max-width: 16px;
     max-height: 16px;
 }
-
+.footer a{
+    cursor: pointer;
+}
 /********************* Start Slider section *********************/
 .home-sec {
     position: relative;
